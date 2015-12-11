@@ -20,7 +20,7 @@ public class HalloweenItem
 	public void preInit(FMLPreInitializationEvent event)
 	{
 
-		katsuage = new Item()
+		katsuage = new HalloweenItemCore()
 		.setCreativeTab(CreativeTabs.tabTools)
 		.setUnlocalizedName("Trick or trade")
 		.setTextureName("samplemod:sample_item")
