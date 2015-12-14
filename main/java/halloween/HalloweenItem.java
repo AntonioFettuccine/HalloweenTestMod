@@ -20,14 +20,14 @@ public class HalloweenItem
 	public void preInit(FMLPreInitializationEvent event)
 	{
 
-		katsuage = new HalloweenItemCore()
-		.setCreativeTab(CreativeTabs.tabTools)
+		katsuage = new HalloweenItemCore()								//インスタンス生成
+		.setCreativeTab(CreativeTabs.tabTools)							//アイテムの内容
 		.setUnlocalizedName("Trick or trade")
 		.setTextureName("samplemod:sample_item")
 		.setMaxStackSize(16);
 		GameRegistry.registerItem(katsuage, "Trick or trade");
 
-        GameRegistry.addRecipe(new ItemStack(HalloweenItem.katsuage),
+        GameRegistry.addRecipe(new ItemStack(HalloweenItem.katsuage),	//レシピ（仮）
                 "XXX",
                 "XYX",
                 "XXX",
