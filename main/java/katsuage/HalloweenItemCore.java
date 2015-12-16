@@ -5,7 +5,6 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -22,16 +21,16 @@ public class HalloweenItemCore
 		katsuage = new HalloweenItem()		//インスタンス生成
 		.setCreativeTab(CreativeTabs.tabTools)		//アイテムの内容
 		.setUnlocalizedName("Trick or trade")
-		.setTextureName("samplemod:sample_item")
+		.setTextureName("antoniofettuccine:Test")
 		.setMaxStackSize(32);
 		GameRegistry.registerItem(katsuage, "Trick or trade");
 
-        GameRegistry.addRecipe(new ItemStack(HalloweenItemCore.katsuage),		//レシピ（仮）
-                "XXX",
-                "XYX",
-                "XXX",
-                'X',Blocks.pumpkin,
-                'Y',Items.emerald
+        GameRegistry.addRecipe(new ItemStack(HalloweenItemCore.katsuage),		//レシピ
+                " Y ",
+                " XZ",
+                'X',Items.stick,
+                'Y',Items.iron_ingot,
+                'Z',Items.emerald
         );
 
 
